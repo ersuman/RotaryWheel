@@ -25,7 +25,11 @@ namespace RotaryWheelUserControl
         public Color BackgroundColor
         {
             get { return _backgroundColor; }
-            set { SetField(ref _backgroundColor, value); }
+            set 
+            { 
+                SetField(ref _backgroundColor, value); 
+                Draw();
+             }
         }
 
         private Color _foregroundColor = Colors.White;
